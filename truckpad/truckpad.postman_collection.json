@@ -1,0 +1,216 @@
+{
+	"info": {
+		"_postman_id": "82e1087f-d4da-4b0b-a4ff-6c7891bea408",
+		"name": "truckpad",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "listarCaminhoes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/truckpad/caminhoes/listar/10",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"truckpad",
+						"caminhoes",
+						"listar",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Caminhoneiros",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listarTodosSemCarga",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/truckpad/caminhoneiro/listarTodosSemCarga",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"truckpad",
+						"caminhoneiro",
+						"listarTodosSemCarga"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "relatorios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/truckpad/caminhoneiro/relatorios?data_inicio",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"truckpad",
+						"caminhoneiro",
+						"relatorios"
+					],
+					"query": [
+						{
+							"key": "data_inicio",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "builder Data base",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/truckpad/caminhoneiro/relatorios?data_inicio",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"truckpad",
+						"caminhoneiro",
+						"relatorios"
+					],
+					"query": [
+						{
+							"key": "data_inicio",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/truckpad/caminhoneiro/create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"nome\":\"Nathan Costa\",\n\t\"data_nascimento\": \"1993-09-04\",\n    \"sexo\" :\"M\",\n    \"possui_veiculo\": \"Y\",\n    \"tipo_cnh\":\"E\",\n     \"cnh\": 82877613672, \n    \"lat_origem\":-23.5713566,\n    \"long_origem\":-46.5504646,\n    \"tipo_veiculo\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/truckpad/caminhoneiro/create",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"truckpad",
+						"caminhoneiro",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/truckpad/caminhoneiro/create Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"nome\":\"Nathan Costa\",\n\t\"data_nascimento\": \"1993-09-04\",\n    \"sexo\" :\"M\",\n    \"possui_veiculo\": \"Y\",\n    \"tipo_cnh\":\"E\",\n     \"cnh\": 82877613672, \n    \"lat_origem\":-23.5713566,\n    \"long_origem\":-46.5504646,\n    \"tipo_veiculo\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/truckpad/caminhoneiro/create",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"truckpad",
+						"caminhoneiro",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/truckpad/caminhoneiro/update/1",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"nome\":\"Nathan Costa 2\",\n\t\"data_nascimento\": \"1993-09-04\",\n    \"sexo\" :\"M\",\n    \"possui_veiculo\": \"Y\",\n    \"tipo_cnh\":\"E\",\n     \"cnh\": 828776136729, \n    \"lat_origem\":-23.5713566,\n    \"long_origem\":-46.5504646,\n    \"tipo_veiculo\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/truckpad/caminhoneiro/update/1",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"truckpad",
+						"caminhoneiro",
+						"update",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
